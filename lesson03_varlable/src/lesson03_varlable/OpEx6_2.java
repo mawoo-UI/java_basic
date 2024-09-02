@@ -1,4 +1,4 @@
-package lesson03_varlable;
+   package lesson03_varlable;
 
 public class OpEx6_2 {
 

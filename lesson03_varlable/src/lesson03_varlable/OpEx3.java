@@ -28,7 +28,6 @@ public class OpEx3 {
 			boolean bool = 10 >5;
 			if(!bool) {
 			
-			String.out.println(sum);
-		}
+			System.out.println(sum);
 	}
-}
+		}
