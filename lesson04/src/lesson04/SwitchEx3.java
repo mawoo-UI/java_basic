@@ -9,7 +9,7 @@ public class SwitchEx3 {
 		int me -scanner.netxInt();
 		int com =(int)(Math.random()) *3) +1;
 		
-		Switch(me - com) {
+		switch(me - com) {
 		case -2 : case 1:
 				System.out.println("이겼습니다");
 		break;

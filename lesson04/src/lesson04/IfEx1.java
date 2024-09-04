@@ -11,8 +11,9 @@ public class IfEx1 {
 		System.out.println("점수 :: " + score);
 		if(score >= 60);{
 		System.out.println("합격입니다");
+		
 	}
-		else
+		
 		{
 	
 		System.out.println("불합격입니다.");
