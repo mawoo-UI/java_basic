@@ -8,7 +8,7 @@ public class Array {
 		//배열 : 하나의 변수로 여러 데이터를 저장
 		//타입 [] 변수명; // 타입 변수명 []
 		int num;
-		int[i] arr; new int[ 5 ]; //숫자에따라 공간생김
+		int[i] arr; new int[5]; //숫자에따라 공간생김
 		double[] arr2;
 		String[] strings;
 		
