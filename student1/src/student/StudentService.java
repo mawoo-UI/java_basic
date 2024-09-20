@@ -3,6 +3,7 @@ import static student.StudentUtils.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 // Logic
@@ -31,9 +32,9 @@ public class StudentService {
 			throw new RuntimeException("중복되지 않는 학번을 입력하세요");
 		}
 		String name = checkName(nextLine("이름"));
-		int kor = checkRange(nextInt("국어"));
-		int eng = checkRange(nextInt("영어"));
-		int mat = checkRange(nextInt("수학"));
+		int kor = checkName(nextInt("국어"));
+		int eng = checkName(nextInt("영어"));
+		int mat = checkName(nextInt("수학"));
 		//		
 		students.add(new Student(no, name, kor, eng, mat));
 	}
@@ -41,7 +42,7 @@ public class StudentService {
 	// 학생 목록 조회
 	public void list() {
 //		System.out.println("list()");
-		int input = checkRange(nextInt("1. 입력순 2. 학번순 3. 이름순 4. 석차순"), 1, 4);
+		int input = checkName(nextInt("1. 입력순 2. 학번순 3. 이름순 4. 석차순"), 1, 4);
 		List<Student> tmp = null;
 		switch (input) {
 		case 1:
@@ -67,6 +68,11 @@ public class StudentService {
 			System.out.println(tmp.get(i));
 		}
 	}
+	private int checkName(int nextInt, int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	private int size() {
 		// TODO Auto-generated method stub
 		return 0;
@@ -83,9 +89,9 @@ public class StudentService {
 			return;
 		}
 		s.setName(checkName(nextLine("이름")));
-		s.setKor(checkRange(nextInt("국어")));
-		s.setEng(checkRange(nextInt("영어")));
-		s.setMat(checkRange(nextInt("수학")));
+		s.setKor(checkName(nextInt("국어")));
+		s.setEng(checkName(nextInt("영어")));
+		s.setMat(checkName(nextInt("수학")));
 		
 	}
 	// 학생 삭제
@@ -147,45 +153,44 @@ public class StudentService {
 //	}
 	
 	// 정렬
-	public void cloneAndSort() throws CloneNotSupportedException {
+	public void cloneAndSort()  {
 		noSortedStudents = new ArrayList<Student>(students);
 		nameSortedStudents = new ArrayList<Student>(students);
 		totalSortedStudents =new ArrayList<Student>(students);
 		
-		noSortedStudents.sort((a,b) -> a.getNo() - b.getNo());
-		sort(0, noSortedStudents);
-		sort(1, nameSortedStudents);
-		sort(2, totalSortedStudents);
-	}
 	
-	private void sort(int type, List<Student> noSortedStudents2) {
-		Student[] arr = target;
-		// 회차 반복
-		for(int i = 0 ; i < i - 1; i++) {
-			// 비교 반복
-			for(int j = 0 ; j < i - 1 - i; j++) { // 0,1,2,3
-				// 값 비교 자리 교환
-				boolean condition = false;
-				switch (type) {
-				case 0:
-					condition = arr[j].getNo() > arr[j+1].getNo();
-					break;
-				case 1:
-					condition = arr[j].getName().compareTo(arr[j+1].getName()) > 0;
-					break;
-				case 2:
-					condition = arr[j].total() < arr[j+1].total();
-					break;
+		noSortedStudents.sort((a,b) -> a.getNo() - b.getNo());
+		nameSortedStudents.sort(new Comparator<student>() {
+			@Override
+		
+		
 
-				default:
-					break;
+//	public int comparator<Student> comp =new MtComp();
+//		totalSortedStudents.sort(comp);
+	
+	class MyComp implements Comparator<Student> {
+
+		@Override
+		public int compare(Student o1, Student o2) {
+			// TODO Auto-generated method stub
+			return o2.total() - o1.total();
+		}
+		
+		// 회차 반복
+	
+		
 				}
-				if(condition) {
-					Student tmp = arr[j];
-					arr[j] = arr[j+1];
-					arr[j+1] = tmp;
-				}
-			}
+			
+		
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
 		}
 	}
 }
+
+	
+
