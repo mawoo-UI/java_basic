@@ -26,6 +26,14 @@ public static  void main(String[] args) {
 }
  Class Gen1 {
 	 String getName() {
-		 return getClass().
+		 return getClass().getSimpleName();
 	 }
 }	
+ class Gen2 extends gen1{}
+ class Gen3 extends gen1{}
+clas Generic5<t> {
+	T t;
+	public Generic5(T t) {
+		
+	}
+}

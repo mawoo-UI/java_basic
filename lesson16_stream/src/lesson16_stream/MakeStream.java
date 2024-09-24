@@ -5,11 +5,15 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class MakeStream {
 	public static void main(String[] args) {
 		// 배열로 스트림만들기 //1회성 개체
-		Stream[] strs = {"가", "나", "A", "B" };
+		String[] strs = {"가", "나", "A", "B" };
 		Stream<String> stream = Arrays.stream(strs);
 		stream.forEach(System.out::println);
 		stream = Arrays.stream(strs, 1, 3);

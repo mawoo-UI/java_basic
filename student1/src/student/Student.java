@@ -1,8 +1,13 @@
 package student;
 
+import java.io.Serializable;
+
 // 학생 예제 > java beans 명세서에 맞게끔 수정
 // field 는 private, method는 public
-public class Student implements Cloneable{
+@SuppressWarnings("serial")
+public class Student implements Cloneable ,Serializable{
+	
+	
 	private int no;
 	private String name;
 	private int kor;
@@ -109,6 +114,11 @@ public class Student implements Cloneable{
 		if(obj == null || !(obj instanceof Student)) return false;
 		Student s = (Student)obj; 
 		return no == s.no && name.equals(s.name);
+	}
+
+	public static void remove(Student s) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

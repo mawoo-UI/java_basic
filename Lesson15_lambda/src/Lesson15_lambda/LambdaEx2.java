@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.function.DoubleConsumer;
 import java.util.function.DoubleToIntFunction;
 import java.util.function.ObjLongConsumer;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class LambdaEx2 {
@@ -25,7 +26,7 @@ public class LambdaEx2 {
 		ObjLongConsumer<String> olc = (s , l) -> System.out.println("문자열 :"+s + ",long :"+l);
 		olc.accept("새똥이", 12L);		
 		
-		list<String> list = Stream.ofNullable( 05,4,3,5,4,1).Map(s -> s+"").distinct.colleact(list);		
+		List<String> list2 = Stream.of( 05,4,3,5,4,1).map(s -> s+"").distinct().collect(Collectors.toList());		
 		System.out.println(list);
 	}
 }
