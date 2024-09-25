@@ -1,14 +1,15 @@
 package day2;
 
 public class SingletonTest {
-	public static void main(String[] args) {
-		//final : 클래스, 메서드에 사용시(오버라이드 금지), 필드
-		final int i;
-		public SingletonTest(int i) {
-			this.i = i;
-		}
+//	final : 클래스, 메서드, 필드
+	final int i;
+	public SingletonTest(int i) {
+		this.i = i;
 		
-		String str;
+	}
+	public static void main(String[] args) {
+		final String str;
+//		Singleton singleton = new Singleton();
 		Singleton s1 = Singleton.getInstance();
 		Singleton s2 = Singleton.getInstance();
 		Singleton s3 = Singleton.getInstance();
@@ -18,8 +19,7 @@ public class SingletonTest {
 		System.out.println(s3);
 		
 		// 회원
-		//책
-		//구매
+		// 책
+		// 구매
 	}
 }
-

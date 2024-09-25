@@ -3,6 +3,7 @@ package lesson07_oop;
 import java.util.Arrays;
 
 public class Selection {
+	public static void main(String[] args) {
 	//	1.	 회차 반복문
 	//최소값 찾기의 반복문(내부로 가는게 편함)// 분리해서하면 쉬움
 	
@@ -11,7 +12,6 @@ public class Selection {
 	//n 제곱
 	
 	
-	public static void main(String[] args) {
 //		String str ="123456";
 //		System.out.println(str.indexOf("3"));
 //		System.out.println(str.indexOf("3"));
@@ -34,19 +34,19 @@ public class Selection {
 //				 
 		
 		
-		int[]arr = {5,4,2,1,7};
-		System.out.println(arr[-1]);
+		int[]arr = {7,8,9,10,1};
+//		System.out.println(arr[-1]);
 		for(int i = 0; i < arr.length ; i++ ) {
 			int idx= i;
 			int min =  arr[idx];  //arr[0]>arr[idx]/  
 			for(int j = i; j < arr.length ; j++ ) {
 			if	(arr[idx] > arr[j]) { //이항연산할때 둘다 언급필요하며/최소값 찾을땐 확인 잘해보기
 //				min = arr[j];
-				i = j;
+				idx = j;
 				
 			}				 
 		}
-		System.out.println(min);
+
 		int tmp = arr[idx];
 		arr[idx] = arr [i]; ///{5,4,2,5,7}
 		arr[i] = tmp; //{1,4,2,5,7}
@@ -82,7 +82,7 @@ public class Selection {
 	//	System.out.println(Arrays.toString( arr1));
 		
 		
-	}}
+	}
 
 
 		

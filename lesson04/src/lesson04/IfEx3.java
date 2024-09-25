@@ -12,15 +12,11 @@ public class IfEx3 {
 		//합격 여부 출력
 		if(ayg >=60 && score1 >=40 && score2 >= 40 && score3 >=40){
 			System.out.println("합격"); 
-			}
-	
+			}	
 		else {
-		System.out.println("합격");
-		} else {
-				System.out.println("불합격");
+		System.out.println("불합격");
+		} 
 			}
-			{	
-		if(score1 >= 80 & score2 % 90 >= 5 || score3 == 100);
 	}
 	
-	}}
+	

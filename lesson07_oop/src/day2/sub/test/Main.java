@@ -1,24 +1,26 @@
 package day2.sub.test;
 
-import java.sql.Array;
-import java.util.Date;
-
-import day2.Circle;
-
+// users.tj
+// java.lang
 public class Main {
-// hello.world
-	//
+	int i;
+	static int si;
 	
+	void run() {
+		java.lang.System.out.println(this.i);
+		System.out.println(Main.si);
+		System.out.println(this);
+	}
 	
-	java.sql.Date d = new java.sql.Date(System.currentTimeMillis());
-	public static void main(Starig[] args) {
-		day2.Circle circle = new day2.Circle();
-		java.util.Scanner scanner = new java.util.Scanner(System.in);
-		Date date = new Date();
-		Array.toString(new int [] {});
-		Integer.parseInt(123);
-		parseInt(456);
-		
-		
+	static void sRun() {
+//		System.out.println(i);
+//		System.out.println(this);
+	}
+	
+	public static void main(String[] args) throws ClassNotFoundException {
+//		System.out.println(InitMain.arr2.length);
+		Main.sRun();
+//		Class cls = InitMain.class; // 클래스 리터럴
+//		Class cls = Class.forName("day2.InitMain");
 	}
 }

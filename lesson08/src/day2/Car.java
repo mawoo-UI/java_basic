@@ -1,13 +1,16 @@
 package day2;
 
-public class Taxi extends Car {
+public class Car {
 
-	
-		String color;
-		String name;
-		void go(String str) {
-			System.out.println("미터기를 켜고 전진");
-		}
-		
-		
+	String color;
+	String name;
+
+	void go(String str) {
+		System.out.println("전진");
+	}
+
+	void back() {
+		System.out.println("후진");
+	}
+
 }

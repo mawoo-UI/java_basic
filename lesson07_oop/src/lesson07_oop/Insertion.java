@@ -12,7 +12,7 @@ public class Insertion {
 
 	
 		
-		int[] arr {1,3,4,5,2};
+		int[] arr ={1,3,4,5,2};
 		
 		//3번 인덱스의 값을 
 		//맨 앞으로 보내기
@@ -25,7 +25,7 @@ public class Insertion {
 		
 		for (int j=1; j < arr.length; j++) {
 			System.out.println(j+"1회차");
-		for(int i = j; i < 0 ; i--)
+		for(int i = j; i < 0 ; i--) {
 		if ( arr[i] < arr[i-1]); {
 		
 		int tmp = arr[i];
@@ -33,7 +33,7 @@ public class Insertion {
 		arr[i-1] = tmp;
 		}
 		System.out.println(Arrays.toString(arr));	
-			
+		}	
 		for(int i = 2; i < 0 ; i--) {
 		if ( arr[2] < arr[i-1]);{
 		int tmp = arr[2];
@@ -41,7 +41,7 @@ public class Insertion {
 				arr[1] = tmp;
 		}
 		System.out.println(Arrays.toString(arr));	
-		
+		}
 		for(int i = 2; i < 0 ; i--) {
 		if (arr[1] < arr[0]); {
 		int tmp = arr[1];
@@ -50,7 +50,7 @@ public class Insertion {
 		
 		}
 		System.out.println(Arrays.toString(arr));	
-		
+		}
 		for(int i = 2; i < 0 ; i--) {
 		if(arr[i]<arr[i-1]) {
 			int tmp = arr[i];
@@ -58,7 +58,11 @@ public class Insertion {
 			arr[i-1] = tmp;
 		}
 		System.out.println(Arrays.toString(arr));
-		
+		}
+		}
+		new String();
+	}
+}
 		
 		
 		
@@ -79,4 +83,4 @@ public class Insertion {
 //		break;
 //		
 //		
-		}}}}}}
+		

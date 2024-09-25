@@ -1,30 +1,35 @@
 package lesson07_oop;
 
 public class MarineMain {
-	public static void main(String[] args) {
-		Marine marin = new Marine();
-				
-				Object marine;
-				System.out.println(marine.hp);
-		
-		marine.hp -= 5*6;
-		
-		System.out.println(marine.hp);
-		
-		Marine.att++;// 공업
-		
-		
-		
-	}
-	int add(int a,int b) {
-		return a+ b;
-	}
-	
+	private int a;
+	public int b;
 
-int c;
-int d() {
-	return 0;
-}//메서드는 ()가들어간다
+	public static void main(String[] args) {
+		Marine marine = new Marine();
+
+		System.out.println(marine.hp);
+
+		marine.hp -= 5 * 6;
+
+		System.out.println(marine.hp);
+
+		Marine.att++;// 공업
+
+	}
+
+	int add(int a, int b) {
+		return a + b;
+	}
+
+	double c = 0;
+
+	void d() {
+	}
+
+	int idx;
+
+	void regist(Member member) {
+	}// 메서드는 ()가들어간다
 //리턴키워드 안쓰면 오류뜸
 //리턴키워드 안하려 할땐 void 사용
 

@@ -18,17 +18,17 @@ public class Exer2 {
 		// a = a + 5 -3;
 		//a = a - 3;
 		
-		for(int i= 0; i <counts.length; i++)
-		counts[0] = money/units[0];
-		money %= units[0];
-		
-	}
-	{
+		for(int i= 0; i <counts.length; i++) {
+		counts[i] = money/units[i];
+		money %= units[i];
+	}	
 	
-		for(int i= 0; i < counts.length; i++)
-			System.out.printf ("%d원 짜리가 %d" + (units[i]>= 1000 ? "장" : " 개 ") + "\n" ,units[i],counts[i]);
-					
-		}
+	
+//	
+//		for(int i= 0; i < counts.length; i++)
+//			System.out.printf ("%d원 짜리가 %d" + (units[i]>= 1000 ? "장" : " 개 ") + "\n" ,units[i],counts[i]);
+//					
+		
 ////		
 //		
 ////		int oman = (money/ 50000);
@@ -66,12 +66,37 @@ public class Exer2 {
 		
 		//{2,2,0,3,0,4,1,0,1,1}
 		
+	Scanner scanner = new Scanner(System.in);
+	String[] strings = new String[3];
+	System.out.println(Integer.MAX_VALUE);
+	Byte b = 10;
+	byte b2= 20;
+	System.out.println(Byte.MAX_VALUE);
+	System.out.println(Character.BYTES);
+	
+	for(int i = 0;;i++) {
+		System.out.println("이름 입력 >");
+		String str = scanner.nextLine();
+		if(str.equals("q")) {
+			System.out.println("bye");
+			strings = Arrays.copyOf(strings, i);
+			break;
+		}
+		if(strings.length == i) {
+			System.out.println("문제 발생 직전");
+			strings = Arrays.copyOf(strings, strings.length *2);
+		}
+		strings[i] = str;
+	}
+	for(String s : strings) {
+		System.out.println(s);
+	}
 		
-		
-		
+}
+}
 	
 //		   }
 		   
 //}
-	}
+	
 //}

@@ -24,8 +24,8 @@ public class IfEx2 {
 			grade += "+";
 		}	
 		{
-		System.out.println ("당신의 학점은" + grade + "입니다." , "점수는" + score + "입니다.");
-		System.out.printf("학점부여 끝");
+		System.out.println ("당신의 학점은" + grade + "입니다.");
+		System.out.println("학점부여 끝");
 	}
 	}}
 	

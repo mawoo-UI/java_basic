@@ -1,5 +1,7 @@
 package lesson04;
 
+import java.util.Arrays;
+
 public class Enhanced {
 	public static void main(String[] args) {
 		int[] arr = {10, 15, 5, 20,30};

@@ -8,7 +8,7 @@ public class Array {
 		//배열 : 하나의 변수로 여러 데이터를 저장
 		//타입 [] 변수명; // 타입 변수명 []
 		int num;
-		int[i] arr; new int[5]; //숫자에따라 공간생김
+		int[] arr= new int[5]; //숫자에따라 공간생김
 		double[] arr2;
 		String[] strings;
 		
@@ -17,7 +17,7 @@ public class Array {
 		
 		System.out.println(arr);
 		int[] arr3;
-		att3 = new int[5]; // int들의 값 변경/
+		arr3 = new int[5]; // int들의 값 변경/
 		//순번 index /최적은 0번/
 		
 		//arr[0] arr[1] arr[2] arr[3] arr[4]

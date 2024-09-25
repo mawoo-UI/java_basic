@@ -2,12 +2,12 @@ package lesson09_interface;
 
 @UserAnno(value = "hey")
 public class UserClass {
-	@UserAnno("hi")
+	@UserAnno({"hi"})
 	void m() {
 
 }
 	@UserAnno(value = "wold", number = 10)
-	@SuppressWarnings(value =  "unused")
+	@SuppressWarnings(value = "unused")
 	void m2() {
 		
 	}
