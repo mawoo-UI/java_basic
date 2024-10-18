@@ -14,7 +14,7 @@ public class Exer2 {
 		
 				else {
 					//System.out.printf("%7c", ' ');
-					System.out.print('');
+					System.out.print("");
 				}
 			}
 		}

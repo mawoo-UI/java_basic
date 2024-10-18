@@ -1,7 +1,7 @@
 package student;
 
-
-
+@SuppressWarnings("serial")
+@Getter
 public class Student implements Cloneable {
 
 	private	int no;
@@ -9,7 +9,6 @@ public class Student implements Cloneable {
 	private	int kor;
 	private	int eng;
 	private	int mat;
-	if(s.arr != null)
 	private int[] arr;
 	
 

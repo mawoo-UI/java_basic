@@ -54,7 +54,7 @@ public class StudentService {
 		System.out.println("학번   이름    국어    영어    수학    총점    평균");
 		System.out.println("===================================================");
 		for(int i = 0 ; i < cnt ; i++) {
-			System.out.printf("%4d %4s %6d %7d %7d %7d %7.2f\n"),
+			System.out.printf("%4d %4s %6d %7d %7d %7d %7.2f\n");
 //					students[i].no,
 //					students[i].name,
 //					students[i].kor,

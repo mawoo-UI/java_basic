@@ -5,7 +5,7 @@ import static java.lang.Integer.parseIn *;
 
 public class Main {
 //클래스가 더 빠름
-	int i;
+	static int i;
 	static int si;
 	
 	
@@ -33,7 +33,7 @@ public class Main {
 	}
 	
 	static int parseInt(String str) {
-		return Integer.parseInt(str)
+		return Integer.parseInt(str);
 	}
 	
 	

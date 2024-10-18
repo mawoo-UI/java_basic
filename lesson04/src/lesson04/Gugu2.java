@@ -26,7 +26,7 @@ public class Gugu2 {
 		int num = 0;
 		if(num>0);{
 	}
-		for(int i = 0 ; i < 5; i++)
+		for(int i = 0 ; i < 5; i++);
 			//for(;;){  break 코드 없을시 System코드로 안넘어감
 			
 	}

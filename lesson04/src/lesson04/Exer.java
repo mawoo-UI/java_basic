@@ -3,20 +3,19 @@ package lesson04;
 public class Exer {
 	public static void main(String[] args) {
 		//1번문제//1부터 100 까지의 정수 중 5의 배수일때 합계를 출력
-		int sum = 0
+		int sum = 0;
 				for(int i = 0; i <= 100; i+=5) {
 					if(i %5 ==0) {
 					sum += i;
-					
-					
-					
+
+					}
 				}
 		//2번문제
 		System.out.println("5의 배수의 합계는"+sum);
 		
 		int evenSum = 0;
 		int oddSum =0;
-		
+		int cnt = 0;
 		for(int i =1 ; i <=100; i++) {
 			if(i % 2 == 0)
 				evenSum += i;
@@ -26,7 +25,7 @@ public class Exer {
 		}
 		System.out.println("짝수의 합계");
 		System.out.println("홀수의 합계");
-		
+		}
 		
 		for(int i = 1; i <=6 ; i++) {
 			for(int j =1 ; j <= 6; j++) {
@@ -35,14 +34,14 @@ public class Exer {
 				System.out.printf("%d,%d)\n",i, j);
 			}
 		}
-	}
+	
 		System.out.println("================");
 		for(int i = 0 ; i<5; i++){
 				for(int j = 0 ;j <5 ; i++);
 				System.out.println("*");
 }
 
-				}
+		
 
 		for(int i = 1; i <=6 ; i++) {
 			for(int j =1 ; j <= 5; j++) {
@@ -52,7 +51,7 @@ public class Exer {
 				
 				boolean exit =false;
 				while(!exit) {
-					int val = (int)Math.random() * 6 + 1);
+					int val = (int)Math.random() * 6 + 1;
 					System.out.println("("+val+")");
 					if(val == 6) {
 						exit =true;
@@ -66,4 +65,6 @@ public class Exer {
 				// 소수 (prime number) :약수 구하기
 				// 2,3,5,7,11,13
 }
+}
+	}
 }

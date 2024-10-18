@@ -14,9 +14,9 @@ public class IfEx3 {
 			System.out.println("합격"); 
 			}
 	
-		else {
+	else if(true) {
 		System.out.println("합격");
-		} else {
+		}  else {
 				System.out.println("불합격");
 			}
 			{	
