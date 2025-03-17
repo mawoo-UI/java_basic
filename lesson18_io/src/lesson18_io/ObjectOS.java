@@ -14,6 +14,7 @@ import java.util.List;
 public class ObjectOS {
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
 //		List<String> list = new ArrayList<String>(Arrays.asList("가", "나", "다"));
+<<<<<<< HEAD
 //		
 		List<Member> members = new ArrayList<Member>(Arrays.asList(new Member("홍길동", 40), new Member("김길동", 20)));
 		System.out.println(members); // age Yes
@@ -37,10 +38,42 @@ class Member implements Serializable {
 	String name;
 	transient int age; //
 	public Member(String name, int age) {
+=======
+
+		List<Member> members = new ArrayList<Member>(Arrays.asList(new Member("홍길동", 40),new Member("김길동", 20)));
+		System.out.println(members);
+//		
+//		
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("oos.txt"));
+		oos.writeObject(members);
+////		oos.writeObject(list);
+////		
+
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("oos.txt"));
+
+		//		System.out.println(ois.readObject());
+//		System.out.println(ois.readObject());
+		
+		List<Member> result = (List<Member>) ois.readObject();
+		result.forEach(System.out::println);//age no
+		}
+
+	}
+
+class Member implements Serializable {
+	String name;
+	transient int age;// 
+	public Member(String name, int age) {
+		super();
+>>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f
 		this.name = name;
 		this.age = age;
 	}
 	public String toString() {
 		return "Member [name=" + name + ", age=" + age + "]";
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f
 }

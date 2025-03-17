@@ -5,7 +5,7 @@ public class Car {
 	String color;
 	String name;
 
-	void go(String str) {
+	void go() {
 		System.out.println("전진");
 	}
 

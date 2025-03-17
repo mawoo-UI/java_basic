@@ -14,6 +14,10 @@ import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
 public class NumericStream {
+<<<<<<< HEAD
+=======
+
+>>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f
 	public static void main(String[] args) {
 		IntStream is = IntStream.rangeClosed(1, 5);
 		is.forEach(System.out::println);
@@ -21,6 +25,7 @@ public class NumericStream {
 		List<Integer> list = IntStream.rangeClosed(1, 45).boxed().collect(Collectors.toList());
 		Collections.shuffle(list);
 		System.out.println(list.subList(0, 6));
+<<<<<<< HEAD
 		
 		LongStream ls = new Random().longs(6, 1, 46).sorted();
 //		ls.forEach(System.out::println);
@@ -36,12 +41,40 @@ public class NumericStream {
 		
 //		Function<String, Exception> f2 = s -> new Exception(s);
 		Function<String, Exception> f2 = Exception::new;
+=======
+
+	// 과제 이거 써서 사용하기
+		LongStream ls = new Random().longs(6, 1, 45).sorted();
+		ls.forEach(System.out::println);
+		
+		IntBinaryOperator ibo = Math :: max;
+		
+		Function<String, Integer> f =Integer:: parseInt ;
+		
+//		BinaryOperator<String> bo = (x,y) -> x.concat(y);//파라미터 언급금지
+		BinaryOperator<String> bo = String ::concat;
+		System.out.println("a".concat("b"));
+		
+//		Function<String, Exception> f2 = s-> new Exception(s);
+		Function<String, Exception> f2 = Exception :: new;
+		
+>>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f
 		
 		
 		is = "가나다라ABCD".chars();
 		is.forEach(s -> System.out.println((char)s));
 		
+<<<<<<< HEAD
 //		Comparator<String> com = (x, y) -> x.compareTo(y);
 		Comparator<String> com = String::compareTo;
 	}
 }
+=======
+		
+//		Comparator<String> com =(x,y) -> y.compareTo(x);
+		Comparator<String> com = String:: compareTo;
+		
+		
+	}
+}
+>>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f

@@ -6,17 +6,34 @@ import java.util.stream.Stream;
 
 public class CollectEx {
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		Stream<Integer> stream = Stream.of(3,1,2,4,1,2,3,4,1,5,1,2,3,4);
 		
 		List<String> list =
 		stream
 		.distinct()
 		.sorted((a, b) -> b - a)
+=======
+		Stream<Integer> stream = Stream.of(3, 1, 2, 4, 1, 2, 3, 4, 1, 5, 1, 2, 3, 4);
+		
+		
+		List<String> list =
+	
+		stream
+		.distinct()
+		.sorted((a,b) -> b-a)
+>>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f
 		.map(i -> i.toString() + i)
 		.collect(Collectors.toList());
 		System.out.println(list);
 //		.forEach(System.out::println);
 		
+<<<<<<< HEAD
 		Stream.concat(list.stream(), list.stream()).forEach(System.out::println); 
 	}
 }
+=======
+		Stream .concat(list.stream(),list.stream()).forEach(System.out:: printnln);
+	}
+}
+>>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f
