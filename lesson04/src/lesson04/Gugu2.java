@@ -26,9 +26,15 @@ public static void main(String[] args) {
 	if	(num >0);{
 		
 	}
+<<<<<<< HEAD
 	for(;;) {
 		break;
 	}
 	System.out.println();
+=======
+		for(int i = 0 ; i < 5; i++);
+			//for(;;){  break 코드 없을시 System코드로 안넘어감
+			
+>>>>>>> 5f07f8bc23894ecd8cd1bdcc73265f16cf63de68
 	}
 }

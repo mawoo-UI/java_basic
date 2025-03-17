@@ -2,17 +2,17 @@ package lesson10_inner;
 
 public class InnerTest {
 	public static void main(String[] args) {
-		Outer outer =new Outer();
-	Outer.Inner inner =  outer.new Inner();
-	Outer.SInner sIneer = new Outer.SInner();
-	
+		Outer outer = new Outer();
+		Outer.Inner inner = outer.new Inner();
+		Outer.SInner sInner = new Outer.SInner();
+	}
 }
-}
+
 class Outer {
-	static int i;
+	int i;
 	static int si;
 	
-	class Inner{
+	class Inner {
 		int i2;
 		static int si2;
 		{
@@ -20,14 +20,12 @@ class Outer {
 			System.out.println(si);
 		}
 	}
-	static class SInner{
+	static class SInner {
 		int i3;
 		static int si3;
 		{
-			System.out.println(i);
+//			System.out.println(i);
 			System.out.println(i3);
 		}
-	
-
-}
+	}
 }

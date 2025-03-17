@@ -6,6 +6,7 @@ public class ArrEx10 {
 		
 		//배열 요소의 합계 /평균 구하기
 		int sum =0;
+		int min =0;
 //		sum = arr[0] + arr[1]+ arr[2]+ arr[3]+ arr[4];
 		for(int i = 0; i < arr.length; i++) {
 			sum += arr[i];

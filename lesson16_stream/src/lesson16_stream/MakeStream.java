@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Stream;
-<<<<<<< HEAD
 
 public class MakeStream {
 	public static void main(String[] args) {
@@ -13,43 +12,22 @@ public class MakeStream {
 		String[] strs = {"가", "나", "A", "B"};
 		Stream<String> stream = Arrays.stream(strs);
 //		System.out.println(stream);
-=======
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.stream.Stream;
-
-public class MakeStream {
-	public static void main(String[] args) {
-		// 배열로 스트림만들기 //1회성 개체
-		String[] strs = {"가", "나", "A", "B" };
-		Stream<String> stream = Arrays.stream(strs);
->>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f
 		stream.forEach(System.out::println);
 		stream = Arrays.stream(strs, 1, 3);
 		System.out.println("==================");
 		stream.forEach(System.out::println);
 		
-<<<<<<< HEAD
 		// 리스트로 스트림 만들기
-=======
-		//리스트로 스트림 만들기
->>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f
 		List<String> list = new ArrayList<String>(Arrays.asList(strs));
 		stream = list.parallelStream();
 		System.out.println("==================");
 		stream.forEach(System.out::println);
-<<<<<<< HEAD
 		
 		// 셋으로 스트림 만들기
-=======
-		//셋으로 스트림 만들기
->>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f
 		stream = new HashSet<>(list).stream();
 		System.out.println("==================");
 		stream.forEach(System.out::println);
 		
-<<<<<<< HEAD
 		// 빌더 패턴으로 스트림 만들기
 		stream = Stream.builder().add("새똥이").add("길동이").add("소똥이").build().map(o -> o.toString());
 		System.out.println("==================");
@@ -69,29 +47,3 @@ public class MakeStream {
 		stream = Stream.of("가", "길동이", "새똥이");
 	}
 }
-=======
-		//빌더 패턴으로 스트림 만들기
-		stream = Stream.builder().add("새똥이").add("길동이").add("소똥이").build().map(o ->o.toString());
-		System.out.println("==================");
-		stream.forEach(System.out::println);
-		
-		//generate 사용으로 스트림 만들기
-		stream = Stream.generate(()-> "애국가").limit(10);
-		System.out.println("==================");
-		stream.forEach(System.out::println);
-		
-		
-		
-		//iterate 사용으로 스트림 만들기
-		stream = Stream.iterate("A",s ->(char)( s.charAt(0)+1)+ "").limit(26);
-		System.out.println("==================");
-		stream.forEach(System.out::println);
-		
-		//of 사용으로 스트림 만들기
-		stream = Stream.of("가","길동이","새똥이");
-		
-		
-		
-	}
-}
->>>>>>> b584507697e52b8b10fa82cc42cffa58f5a0582f

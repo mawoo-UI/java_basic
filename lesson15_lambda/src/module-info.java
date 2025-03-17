@@ -1,8 +1,2 @@
-/**
- * 
- */
-/**
- * 
- */
-module Lesson15_lambda {
+module lesson15_lambda {
 }

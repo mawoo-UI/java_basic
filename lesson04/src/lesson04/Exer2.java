@@ -26,10 +26,12 @@ public static void main(String[] args) {
 		for(String s: strings) {
 			if(s == null) break;
 			System.out.println(s);
+
+	
+			}
 		}
 	}
-	
-	
 }
-}
+	
+
 

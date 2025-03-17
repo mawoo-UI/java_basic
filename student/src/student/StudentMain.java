@@ -1,6 +1,5 @@
 package student;
 
-
 public class StudentMain {
 	public static void main(String[] args) {
 		// UI
@@ -44,9 +43,3 @@ public class StudentMain {
 		}
 	}
 }
-//이름은 반드시 한글//최소 2 최대 글자수는 4의 한글/그렇지않으면 예외
-//정상흐름으로
-//범위값은 레인지
-//점수의 범위는 0~100 
-//학번중복 불허
-//조회시 1.학번이름 2.이름 오른차순 3. 점수 내림차순/강제는아님

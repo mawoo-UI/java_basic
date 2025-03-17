@@ -1,6 +1,5 @@
 package lesson09_interface.starcraft;
 
-
 public class StarcraftMain {
 	static String s = "abcd";
 	@SuppressWarnings({"unused", "deprecation"})

@@ -9,7 +9,12 @@ public class WhileEx2 {
 		int sum = 0; //초기화
 //		boolean flag = true; //반복여부 
 
+<<<<<<< HEAD
 		while(true) {
+=======
+		while(true) 
+		{
+>>>>>>> 5f07f8bc23894ecd8cd1bdcc73265f16cf63de68
 		System.out.println("더할 숫자를 입력하세요 >");
 		String input = scanner.nextLine();
 		int num = Integer.parseInt(input);

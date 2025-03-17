@@ -2,8 +2,8 @@ package student;
 
 import java.io.Serializable;
 
-//학생 예제 > java beans 명세서에 맞게끔 수정
-//field 는 private, method는 public
+// 학생 예제 > java beans 명세서에 맞게끔 수정
+// field 는 private, method는 public
 
 @SuppressWarnings("serial")
 public class Student implements Cloneable, Serializable{

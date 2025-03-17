@@ -8,7 +8,11 @@ public class SwitchEx3 {
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("가위(1), 바위(2), 보(3) 중에 하나를 선택하세요 >");
+<<<<<<< HEAD
 		int me =scanner.nextInt();
+=======
+		int me = scanner.nextInt();
+>>>>>>> 5f07f8bc23894ecd8cd1bdcc73265f16cf63de68
 		int com =(int)(Math.random()) *3 +1;
 		
 		switch(me - com) {

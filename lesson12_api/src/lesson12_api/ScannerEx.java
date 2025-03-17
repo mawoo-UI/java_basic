@@ -6,21 +6,14 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class ScannerEx {
-public static void main(String[] args) throws Exception {
-	URL url = new URL("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
-	FileOutputStream fos = new FileOutputStream("google.png");
-	InputStream	is = url.openStream();
-//	Scanner scanner = new Scanner(is);
-	
-//	while(scanner.hasNextByte());
-	int b = 0;
-	while((b = is.read()) != -1) {
-		
-		fos.write(b);
-		
-	}
-	fos.close();
-	
+	public static void main(String[] args) throws Exception {
+		URL url = new URL("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+		FileOutputStream fos = new FileOutputStream("google.png");
+		InputStream is = url.openStream();
+		int b = 0;
+		while((b = is.read()) != -1) {
+			fos.write(b);
+		}
+		fos.close();
 	}
 }
-

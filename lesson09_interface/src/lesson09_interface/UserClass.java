@@ -4,13 +4,15 @@ package lesson09_interface;
 public class UserClass {
 	@UserAnno({"hi"})
 	void m() {
-
-}
-	@UserAnno(value = "wold", number = 10)
-	@SuppressWarnings(value = "unused")
+		
+	}
+	
+	@UserAnno(value = "world", number = 10)
+	@SuppressWarnings(value="unused")
 	void m2() {
 		
 	}
-	@UserAnno(value = {"hey","hi","world"}, number = 5)
+	
+	@UserAnno(value = {"hey", "hi", "world"}, number = 5)
 	int i;
 }

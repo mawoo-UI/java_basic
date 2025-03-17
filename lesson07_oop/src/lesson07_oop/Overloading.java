@@ -1,26 +1,25 @@
 package lesson07_oop;
 
+import java.util.Stack;
+
 public class Overloading {
 	public static void main(String[] args) {
-		
+		new Operator().multiply(10, 20);
+//		Stack<E>k
 	}
 }
 
-class Operato{
-	int multiply(int x, int y)
-	{
+class Operator {
+	int multiply(int x, int y) {
 		return x * y;
 	}
-
 	int multiply(int z) {
-		return z*z;
+		return z * z;
 	}
-	
-	double multiply(double z,int a) {
-		return z *z;
+	double multiply(double x, int y) {
+		return x * y;
 	}
-	double multiply(int x,Double y) {
-		return x *y;
+	double multiply(int x, double y) {
+		return x * y;
 	}
-	
 }
